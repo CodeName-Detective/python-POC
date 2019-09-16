@@ -1,0 +1,73 @@
+
+Worst the fit more the CORRELATION value will be close to ZERO
+For CORRELATION, a P-value tells us the probability that randomly(random chance) drawn dots will result in a similarly strong relationship, or stronger. Thus the smaller P-value the more the confidence we have in predcictions we make the line.
+IF P-value = 2.2*(10**-16),  which means that the probability of random data creating a similarly strong, or stronger relationship is crazy small(2.2*(10**-16))
+
+if P-value is 0.03, that means there is 3% chance that random(random chance) data can will produce the similar result.
+
+
+Sample from a distribution: We do this to explore statistics. We plug the samples in to statistic tests to see what happens. Since we know what orginal distribution is, we can compare our expectations of what will happen to reality.
+
+
+Central Limit Therom: When we do an experiment, we don't always know what distribution our data comes from. Who Cares??????????? The sample means will be normally distributed. Because we know that the sample means are normally distributed, we don't need to worry much about the distribution where the sample comes from. We can use means normal distribution to make CONFIDENCE INTERVALS, do T-tests, ANOVA and pretty much any statistical test.
+  Note: In Order for the Central Limit Therom to be true, the sample size must be atleas 30.
+  
+
+Becuase, the interval covers 95% of means(bootstraped), we know that anything outside of it occurs less than 5% of the time. This is to say, the P-value of anything outside  of the confidence interval is < 0.05(and thus, significantly different)
+
+
+-----------------------------------------------------------------R**2 Test--------------------------------------
+line is the best fit line.
+
+R**2 is the percentage of variation explained by the relationship between two varibles.
+
+R**2 =(var(mean)-var(line))/var(mean)
+
+R**2 = 0.9 The variation between the two varibles explains 90% of the variation in the data. 
+R**2 = 0.01 Dag!!!!!!! Who cares if that relationship is significant, it only accounts for 1% of variation in the data. Something explains remaining 99%
+
+
+R**2 can be calculated by squaring R(Which is pearson correlation coefficient)
+
+R**2 does not indicate the direction of the correlation, because it was squared.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Probabilities are the areas under the fixed distribution pr(data|distribution) i.e., Probability of data given distribution
+
+Likelyhoods are the Y-axis values for the fixed data points with distributions that can be moved. L(distribution|data)
+
+
+-----------------------------------------------------------------------P Value-----------------------------------------------------------------------------
+
+People often thinks that "P-value" often means "Probability". They are related but not the same
+
+
+A P-value is the probability that the random chance generated the data, or something else that is equal or rarer. Given the Chance Model, the probability that the results are as extreme as the observed results.
+
+Lesser the P-value means lesser the chance of happening event of measurement because of Random chance.
+
+or it is the Likely of hood an event occuring randomly(Random chance)
+
+-------------------------------------Standard normal distribution----------------------------------------------------
+
+It is also called as Z-Distribution
+
+A special normal distribution with mean = 0 and Std. Deviation = 1.
+
+The fromula of transforming a score or observation x from any normal distribution to the standard normal score is z = (x-mean)/Std. Deviation.
+
+z value is also called as z-score = number of stadard deviations from the mean.
+
+----------------------------------------Steps in any Machine Learning Model Creation-----------------------------------------
+Gathering data.
+Cleaning data.
+Feature engineering.
+Defining model.
+Training, testing model and predicting the output.
+
+---------------------------------------- Outliers -----------------------------------------------------------------------------
+
+1) Datapoints that falls outside of 1.5 times of an IQR above the 3rd quartile and below the first quartile
+
+2) Datapoints that falls outside of 3 standard deviations. We can use a z-score and if the z-score falls outside of 2 standard deviations
