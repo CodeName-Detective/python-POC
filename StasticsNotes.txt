@@ -71,3 +71,8 @@ Training, testing model and predicting the output.
 1) Datapoints that falls outside of 1.5 times of an IQR above the 3rd quartile and below the first quartile
 
 2) Datapoints that falls outside of 3 standard deviations. We can use a z-score and if the z-score falls outside of 2 standard deviations
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+3. Computer vision
+2. Big data
+1. Natural Language Processing
